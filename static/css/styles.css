@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --white: #fff;
+  --light-grey: #dbdbdb;
+  --grey: #929292;
+  --black: #000000;
+}
+
+/* General */
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--light-grey);
+}
+
+section {
+  border-bottom: 3px solid var(--light-grey);
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: var(--white);
+  align-items: center;
+  border-bottom: 3px solid var(--light-grey);
+}
+
+.navbar .logo img {
+  width: 300px;
+  height: auto;
+}
+
+.links-container ul {
+  list-style: none;
+  display: flex;
+  margin-right: 30px;
+  border-color: var(--black);
+}
+
+.links-container li {
+  margin: 0 10px;
+}
+
+.links-container a {
+  color: var(--grey);
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.links-container a.active {
+  background-color: var(--light-grey);
+}
+
+.links-container a:hover {
+  background-color: var(--light-grey);
+}
+
+/* Title Section */
+
+main {
+  background-color: var(--white);
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid var(--light-grey);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Members Section */
+
