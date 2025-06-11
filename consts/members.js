@@ -4,15 +4,15 @@ export const members = {
     description:
       "Apasionado por la tecnología y la resolución de problemas, con experiencia en proyectos académicos utilizando lenguajes como Java, Python y SQL. Gran capacidad para el trabajo en equipo, aprendizaje constante y adaptación a nuevos desafíos. Buscando oportunidades para aplicar y seguir desarrollando sus habilidades en el ámbito del desarrollo de software.",
     img: "./static/img/profileimg/santiago-img.jpg",
-    linkedin: "https://linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/santiago-capitani-clavero-8aba27278/",
     github: "https://github.com/Santiagocapi",
   },
   gonzalo: {
     name: "Gonzalo Cofre",
     description:
       "Apasionado por la tecnología y la resolución de problemas, con experiencia en proyectos académicos utilizando lenguajes como Java, Python y SQL. Gran capacidad para el trabajo en equipo, aprendizaje constante y adaptación a nuevos desafíos. Buscando oportunidades para aplicar y seguir desarrollando sus habilidades en el ámbito del desarrollo de software.",
-    img: "./static/img/profileimg/pablo-img.png",
-    linkedin: "https://linkedin.com/",
+    img: "./static/img/profileimg/gonzalo-img.jpg",
+    linkedin: "http://www.linkedin.com/in/gonzalo-ezequiel-cofre-279b0a29a",
     github: "https://github.com/GonzaCofre",
   },
   rocio: {
@@ -37,7 +37,7 @@ export const members = {
       "Apasionada por la tecnología y la resolución de problemas, con experiencia en proyectos académicos utilizando lenguajes como Java, Python y SQL. Gran capacidad para el trabajo en equipo, aprendizaje constante y adaptación a nuevos desafíos. Buscando oportunidades para aplicar y seguir desarrollando sus habilidades en el ámbito del desarrollo de software.",
     img: "./static/img/profileimg/delfina-img.jpeg",
     linkedin: "https://www.linkedin.com/in/delfina-mulinetti-a05412238/",
-    github: "https://github.com/",
+    github: "https://github.com/DelfinaMulinetti",
   },
   pablo: {
     name: "Pablo Velasco",
