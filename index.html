@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio Grupal</title>
     <!-- Link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./static/css/styles.css" />
+    <title>Portafolio Grupal</title>
   </head>
   <body>
     <!-- Header -->
@@ -21,86 +21,137 @@
       </div>
       <nav class="links-container">
         <ul>
-          <li><a href="#" class="active">Inicio</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
+          <li><a href="#start">Inicio</a></li>
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#members">Integrantes</a></li>
         </ul>
       </nav>
     </header>
-
-    <!-- Title Section -->
     <main>
-      <div class="text-container">
-        <h1>Ctrl C</h1>
-        <h1>+</h1>
-        <h1>Ctrl</h1>
-      </div>
-      <div class="img-container"></div>
+      <!-- Title Section -->
+      <section id="start" class="title-section">
+        <h1 class="text-container">
+          Ctrl C
+          <span>+</span>
+          Ctrl V
+        </h1>
+        <img src="./static/img/group-img.png" alt="group image" />
+      </section>
+
+      <!-- About Us -->
+      <section id="about" class="about-us">
+        <h2>Acerca de:</h2>
+        <p>
+          Grupo de estudio de la carrera “Tecnicatura universitaria en
+          programación” - Universidad Tecnológica Nacional. Sede Regional San
+          Rafael, Mendoza Argentina.
+        </p>
+      </section>
+
+      <!-- Memebers Section -->
+      <section id="members" class="members">
+        <h2>Integrantes:</h2>
+        <article class="members-container">
+          <div class="member-card" data-id="santiago">
+            <h4>Santiago Capitani</h4>
+            <div>
+              <img
+                src="./static/img/profileimg/santiago-img.jpg"
+                alt="rocio img"
+              />
+              <p>
+                <strong>Programador</strong>
+                <br />
+                Mendoza, Argentina
+              </p>
+            </div>
+          </div>
+
+          <div class="member-card" data-id="gonzalo">
+            <h4>Gonzalo Cofre</h4>
+            <div>
+              <img
+                src="./static/img/profileimg/rocio-img.jpg"
+                alt="rocio img"
+              />
+              <p>
+                <strong>Programador</strong>
+                <br />
+                Mendoza, Argentina
+              </p>
+            </div>
+          </div>
+
+          <div class="member-card" data-id="rocio">
+            <h4>Rocio Lucero</h4>
+            <div>
+              <img
+                src="./static/img/profileimg/rocio-img.jpg"
+                alt="rocio img"
+              />
+              <p>
+                <strong>Programadora</strong>
+                <br />
+                Mendoza, Argentina
+              </p>
+            </div>
+          </div>
+
+          <div class="member-card" data-id="guido">
+            <h4>Guido Mandile</h4>
+            <div>
+              <img
+                src="./static/img/profileimg/guido-img.jpeg"
+                alt="rocio img"
+              />
+              <p>
+                <strong>Programador</strong>
+                <br />
+                Cordoba, Argentina
+              </p>
+            </div>
+          </div>
+
+          <div class="member-card" data-id="delfina">
+            <h4>Delfina Mulinetti</h4>
+            <div>
+              <img
+                src="./static/img/profileimg/delfina-img.jpeg"
+                alt="rocio img"
+              />
+              <p>
+                <strong>Programadora</strong>
+                <br />
+                Cordoba, Argentina
+              </p>
+            </div>
+          </div>
+
+          <div class="member-card" data-id="pablo">
+            <h4>Pablo Velasco</h4>
+            <div>
+              <img
+                src="./static/img/profileimg/pablo-img.png"
+                alt="pablo img"
+              />
+              <p>
+                <strong>Programador</strong>
+                <br />
+                Mendoza, Argentina
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
-
-    <!-- About Us -->
-     <section class="about-us">
-
-     </section>
-
-    <!-- Memebers Section -->
-    <section class="members">
-      <h3>Integrantes</h3>
-      <p>Nuestro grupo esta conformado por:</p>
-      <div>
-        <h4>Integrante 1</h4>
-        <p>
-          title
-          <span>Description</span>
-        </p>
-      </div>
-      <div>
-        <h4>Integrante 2</h4>
-        <p>
-          title
-          <span>Description</span>
-        </p>
-      </div>
-      <div>
-        <h4>Integrante 3</h4>
-        <p>
-          title
-          <span>Description</span>
-        </p>
-      </div>
-      <div>
-        <h4>Integrante 4</h4>
-        <p>
-          title
-          <span>Description</span>
-        </p>
-      </div>
-      <div>
-        <h4>Integrante 5</h4>
-        <p>
-          title
-          <span>Description</span>
-        </p>
-      </div>
-      <div>
-        <h4>Integrante 6</h4>
-        <p>
-          title
-          <span>Description</span>
-        </p>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer>
       <img src="./static/img/utn-logo.png" alt="utn logo" />
       <div>
-        <p>Portafolio Grupal</p>
-        <p>
-          Tecnicatura Universitaria en Programación - <span>UTN FRSR 2025</span>
-        </p>
-        <p>Desarrollado por <span>Grupo Ctrl C + Ctrl V</span></p>
+        <p>Desarrollado por <strong>Grupo Ctrl C + Ctrl V</strong> - 2025</p>
+        <p>Tecnicatura Universitaria en Programación - <span>UTN FRSR</span></p>
       </div>
     </footer>
   </body>
+  <script type="module" src="./js/index.js"></script>
 </html>

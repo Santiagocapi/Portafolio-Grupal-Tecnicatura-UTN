@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/css/styles.css" />
     <title>Ver Perfil</title>
   </head>
   <body>
@@ -10,20 +18,83 @@
       <div class="logo">
         <img src="./static/img/utn-logo.png" alt="utn logo" />
       </div>
-      <nav class="">
+      <nav class="links-container">
         <ul>
-          <li><a href="#">Link seccion 1</a></li>
-          <li><a href="#">Link seccion 2</a></li>
-          <li><a href="#">Link seccion 3</a></li>
+          <li><a href="/index.html">Volver al inicio</a></li>
         </ul>
       </nav>
     </header>
-
-    <section>
-        <img src="#" alt="Perfil Foto">
-        <div>
-            
+    <main>
+      <!-- Profile Header -->
+      <section class="profile-header">
+        <div class="profile-header-info">
+          <h1 data-profile="name">Juan Perez</h1>
+          <h2>Estudiante Tecnicatura Universitaria en Programación</h2>
+          <p data-profile="description">
+          </p>
         </div>
-    </section>
+        <div class="profile-header-photo">
+          <img class="avatar" data-profile="img" />
+          <div class="profile-header-social">
+            <a data-profile="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="./static/img/icons/linkedin.png" alt="LinkedIn"/>
+            </a>
+            <a data-profile="github" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <img src="./static/img/icons/gitithub.png" alt="GitHub"/>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technologies Section -->
+      <section class="profile-technologies">
+        <h3>Tecnologías</h3>
+        <p>Lenguajes y Herramientas utilizadas</p>
+
+        <div class="profile-technologies-grid">
+          <div class="profile-technologies-card">
+            <img src="./static/img/icons/pseInt.png" alt="PseInt" />
+            <span>PseInt</span>
+          </div>
+          <div class="profile-technologies-card">
+            <img src="./static/img/icons/java.png" alt="Java" />
+            <span>Java</span>
+          </div>
+          <div class="profile-technologies-card">
+            <img src="./static/img/icons/python.png" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="profile-technologies-card">
+            <img src="./static/img/icons/css.png" alt="CSS" />
+            <span>Css</span>
+          </div>
+          <div class="profile-technologies-card">
+            <img src="./static/img/icons/html.png" alt="HTML" />
+            <span>Html</span>
+          </div>
+          <div class="profile-technologies-card">
+            <img src="./static/img/icons/js.png" alt="JavaScript" />
+            <span>Javascript</span>
+          </div>
+          <div class="profile-technologies-card">
+            <img src="./static/img/icons/git.png" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div class="profile-technologies-card">
+            <img src="./static/img/icons/ai.png" alt="AI" />
+            <span>Ai</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <img src="./static/img/utn-logo.png" alt="utn logo" />
+      <div>
+        <p>Desarrollado por <strong>Grupo Ctrl C + Ctrl V</strong> - 2025</p>
+        <p>Tecnicatura Universitaria en Programación - <span>UTN FRSR</span></p>
+      </div>
+    </footer>
+    <script type="module" src="./js/profile.js"></script>
   </body>
 </html>

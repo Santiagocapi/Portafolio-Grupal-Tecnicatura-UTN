@@ -5,6 +5,8 @@
   --light-grey: #dbdbdb;
   --grey: #929292;
   --black: #000000;
+  --fyellow: #f6b836;
+  --default: #d9d9d9;
 }
 
 /* General */
@@ -15,14 +17,17 @@
   outline: none;
   border: none;
   text-decoration: none;
-}
-
-body {
-  background-color: var(--light-grey);
+  background-color: white;
+  scroll-behavior: smooth;
 }
 
 section {
   border-bottom: 3px solid var(--light-grey);
+  scroll-margin-top: 100px;
+}
+
+section:last-child {
+  border-bottom: none;
 }
 
 /* Header */
@@ -33,6 +38,8 @@ section {
   background-color: var(--white);
   align-items: center;
   border-bottom: 3px solid var(--light-grey);
+  position: sticky;
+  top: 0;
 }
 
 .navbar .logo img {
@@ -67,24 +74,229 @@ section {
   background-color: var(--light-grey);
 }
 
+main {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 /* Title Section */
 
-main {
-  background-color: var(--white);
-  height: 50vh;
+.title-section {
   width: 100%;
+  height: 50vh;
   display: flex;
+  padding: 0 24px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-bottom: 3px solid var(--light-grey);
+}
+
+.title-section img {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
 }
 
 .text-container {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  font-size: 72px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  span {
+    color: var(--fyellow);
+  }
+}
+
+/* About us section */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 64px;
+  font-size: 24px;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
 
 /* Members Section */
 
+.members {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 64px;
+}
+
+.members-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-template-rows: repeat(
+    2,
+    auto
+  ); /* 2 filas automáticas (basadas en el contenido) */
+  gap: 48px;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+  border: var(--default) solid 1px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+  h4 {
+    font-size: 16px;
+    color: var(--black);
+  }
+
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.member-card div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  p {
+    font-size: 12px;
+    color: var(--grey);
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 24px 40px;
+  background-color: var(--white);
+  border-top: 3px solid var(--light-grey);
+  img {
+    width: 200px;
+    height: auto;
+  }
+  div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+/* Perfil individual */
+.profile-header {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  padding: 64px;
+  border-radius: 32px;
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+.profile-header-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 16px;
+    color: var(--grey);
+  }
+}
+
+.profile-header-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.profile-header-social {
+  display: flex;
+  gap: 16px;
+  img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+  }
+}
+
+/* Tecnologías perfil */
+.profile-technologies {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  p {
+    font-size: 1rem;
+    color: var(--grey);
+    margin-bottom: 32px;
+  }
+}
+
+.profile-technologies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.profile-technologies-card {
+  background: var(--white);
+  border: 1px solid var(--default);
+  border-radius: 12px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+  img {
+    width: 48px;
+    height: 48px;
+  }
+  span{
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
